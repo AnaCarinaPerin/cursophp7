@@ -2,6 +2,17 @@
 
 require_once ("config.php");
 
+//Update de um usuário
+$usuario = new Usuario();
+$usuario->loadById(11);
+$usuario->update("craudia", "senhadacraudia");
+echo $usuario;
+
+//Insere um novo usuário
+//$aluno = new Usuario("aluno", "@luno");
+//$aluno->insert();
+//echo $aluno;
+
 //Carrega uma lista de usuários buscando pelo login e a senha
 //$usuario = new Usuario();
 //$usuario->login("lola","senhadalola");
