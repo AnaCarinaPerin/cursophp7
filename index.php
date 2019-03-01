@@ -2,11 +2,17 @@
 
 require_once ("config.php");
 
-//Update de um usuário
-$usuario = new Usuario();
+//Excluir um usuário
+$usuario =  new Usuario();
 $usuario->loadById(11);
-$usuario->update("craudia", "senhadacraudia");
+$usuario->delete();
 echo $usuario;
+
+//Update de um usuário
+//$usuario = new Usuario();
+//$usuario->loadById(11);
+//$usuario->update("craudia", "senhadacraudia");
+//echo $usuario;
 
 //Insere um novo usuário
 //$aluno = new Usuario("aluno", "@luno");
